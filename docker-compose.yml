@@ -1,0 +1,14 @@
+services:
+  adclipper:
+    build: .
+    container_name: adclipper
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      - ./storage:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

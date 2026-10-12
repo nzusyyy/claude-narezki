@@ -1,0 +1,5 @@
+telethon>=1.36,<2.0
+yt-dlp>=2024.10.22
+imageio-ffmpeg>=0.5.1  # встроенный ffmpeg, если системного нет
+aiohttp>=3.9
+Pillow>=10.0
